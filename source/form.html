@@ -48,13 +48,13 @@
         <h2 class="visually-hidden">Профиль пользователя</h2>
         <div class="user-profile__container">
           <p class="level"><span class="level__number">80 </span><span class="level__text">level</span></p>
-          <div class="avatar"><img class="" src="https://via.placeholder.com/100x100"
+          <div class="avatar"><img class="avatar__picture" src="https://via.placeholder.com/100x100"
               alt="Ваш Аватар, на котором изображён рыжий мужик в очках и шапке, на фоне снега.">
           </div>
         </div>
         <form class="user-profile__form" action="https://echo.htmlacademy.ru" method="POST">
           <label class="button user-profile__button" for="user-avatar">сменить фото</label>
-          <input class="visually-hidden" name="avatar" id="user-avatar" type="file" accept="image/*">
+          <input class="visually-hidden" id="user-avatar" type="file" name="avatar" accept="image/*">
           <input class="visually-hidden" type="submit">
           <!-- Js сам нажмет на эту кнопку, когда картинка будет выбрана -->
         </form>
@@ -116,13 +116,13 @@
               <h3 class="form-section__subtitle">Шаг 1.<br>Даты пребывания</h3>
               <p class="form-section__text">Укажите предпочтительное количество попутчиков, которых
                 вы хотели бы позвать в поездку, и ее предполагаемую длительность.</p>
-              <label class="form__label" for="form-companions-count">ищу попутчиков: <span>чел.</span></label>
-              <input class="form__field" id="form-companions-count" type="number" name="companions-count" min="0"
-                value="2">
-              <label class="form__label" for="form-duration">длительность: <span>дн.</span></label>
-              <input class="form__field" id="form-duration" type="number" name="duration" min="1" value="3">
-              <label class="form__label"><input type="checkbox" name="with-children" value="true" checked>Можно с
-                детьми</label>
+              <label class="form-section__label" for="form-companions-count">ищу попутчиков: <span>чел.</span></label>
+              <input class="form-section__field" id="form-companions-count" type="number" name="companions-count"
+                min="0" value="2">
+              <label class="form-section__label" for="form-duration">длительность: <span>дн.</span></label>
+              <input class="form-section__field" id="form-duration" type="number" name="duration" min="1" value="3">
+              <label class="form-section__label"><input type="checkbox" name="with-children" value="true" checked>Можно
+                с детьми</label>
               <div class="month-selector form-section__month" aria-label="Выберите месяц поездки">
                 <label class="visually-hidden" aria-hidden="true"><input type="month" name="month"
                     value="2019-03"></label>
@@ -295,7 +295,7 @@
                 </li>
                 <li class="form-section__country">
                   <input class="visually-hidden" type="text" name="country-2" value="Чехия" aria-hidden="true">
-                  <button class="form-section__country-selector">Чехтя</button>
+                  <button class="form-section__country-selector">Чехия</button>
                 </li>
                 <li class="form-section__country">
                   <input class="visually-hidden" type="text" name="country-3" value="" aria-hidden="true">
@@ -303,26 +303,79 @@
                 </li>
                 <li class="form-section__country">
                   <button class="form-section__country-selector">Добавить страну</button>
+                  <div class="form-section__box">
+                    <table class="alphabet form-section__alphabet">
+                      <tr class="alphabet__row">
+                        <td class="alphabet__cell">А</td>
+                        <td class="alphabet__cell">Б</td>
+                        <td class="alphabet__cell">В</td>
+                        <td class="alphabet__cell">Г</td>
+                        <td class="alphabet__cell">Д</td>
+                      </tr>
+                      <tr class="alphabet__row">
+                        <td class="alphabet__cell">Е</td>
+                        <td class="alphabet__cell">З</td>
+                        <td class="alphabet__cell">И</td>
+                        <td class="alphabet__cell">К</td>
+                        <td class="alphabet__cell">Л</td>
+                      </tr>
+                      <tr class="alphabet__row">
+                        <td class="alphabet__cell">М</td>
+                        <td class="alphabet__cell">Н</td>
+                        <td class="alphabet__cell">О</td>
+                        <td class="alphabet__cell">П</td>
+                        <td class="alphabet__cell">Р</td>
+                      </tr>
+                      <tr class="alphabet__row">
+                        <td class="alphabet__cell">С</td>
+                        <td class="alphabet__cell">Т</td>
+                        <td class="alphabet__cell">У</td>
+                        <td class="alphabet__cell">Ф</td>
+                        <td class="alphabet__cell">Х</td>
+                      </tr>
+                      <tr class="alphabet__row">
+                        <td class="alphabet__cell">Ч</td>
+                        <td class="alphabet__cell">Ш</td>
+                        <td class="alphabet__cell">Э</td>
+                        <td class="alphabet__cell">Ю</td>
+                        <td class="alphabet__cell">Я</td>
+                      </tr>
+                    </table>
+                    <ul class="countries-list form-section__countries-list">
+                      <li class="countries-list__item">Австралия</li>
+                      <li class="countries-list__item">Австрия</li>
+                      <li class="countries-list__item">Азербайджан</li>
+                      <li class="countries-list__item">Албания</li>
+                      <li class="countries-list__item">Алжир</li>
+                      <li class="countries-list__item">Ангола</li>
+                      <li class="countries-list__item">Андорра</li>
+                      <li class="countries-list__item">Антигуа и Барбуда</li>
+                      <li class="countries-list__item">Аргентина</li>
+                      <li class="countries-list__item">Армения</li>
+                      <li class="countries-list__item">Афганистан</li>
+                    </ul>
+                  </div>
                 </li>
               </ol>
               <a class="form-section__button" href="#Step-3">Следующий шаг</a>
               <a class="form-section__button" href="#Step-1">На шаг назад</a>
             </li>
-            <li class="form__item" id="Step-3">
+            <li class="form-section__item" id="Step-3">
               <h3 class="form-section__subtitle">Шаг 3.<br>Развлечения</h3>
               <p class="form-section__text">Наконец, расскажите о своих планах времяпровождения. Можно писать в
                 свободной форме и ставить тэги.</p>
               <ol class="form-section__plans-list">
                 <li class="form-section__plans-item">
-                  <label class="form-section__label form-section__label--step-3">Босния и Герцеговина<img
+                  <label class="form-section__label form-section__label--step-3" for="plan-1">Босния и Герцеговина<img
                       class="form-section__flag" src="https://via.placeholder.com/35x24"
                       alt="флаг Боснии и Герцеговины"></label>
-                  <textarea class="form-section__user-text" name="user-plans-1" placeholder="План действий"></textarea>
+                  <textarea class="form-section__user-text" id="plan-1" name="user-plans-1"
+                    placeholder="План действий"></textarea>
                 </li>
                 <li class="form-section__plans-item">
-                  <label class="form-section__label form-section__label--step-3">Чехия<img class="form-section__flag"
-                      src="https://via.placeholder.com/35x24" alt="флаг Чехии"></label>
-                  <textarea class="form-section__user-text" name="user-plans-2" placeholder="План действий">Пить пиво и лазить
+                  <label class="form-section__label form-section__label--step-3" for="plan-2">Чехия<img
+                      class="form-section__flag" src="https://via.placeholder.com/35x24" alt="флаг Чехии"></label>
+                  <textarea class="form-section__user-text" id="plan-2" name="user-plans-2" placeholder="План действий">Пить пиво и лазить
                     по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
                 </li>
               </ol>
