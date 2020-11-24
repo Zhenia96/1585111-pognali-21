@@ -141,7 +141,7 @@
                   <th class="calendar__heading">П<span class="visually-hidden">ятница</span></th>
                   <th class="calendar__heading">С<span class="visually-hidden">уббота</span></th>
                   <th class="calendar__heading">В<span class="visually-hidden">оскресенье</span></th>
-                </tr>
+
                 <tr class="calendar__row">
                   <td class="calendar__item"><label>23<input class="visually-hidden" type="checkbox" value="23"
                         name="day"></label>
@@ -164,7 +164,7 @@
                   <td class="calendar__item"><label>1<input class="visually-hidden" type="checkbox" value="1"
                         name="day"></label>
                   </td>
-                </tr>
+
                 <tr class="calendar__row">
                   <td class="calendar__item"><label>2<input class="visually-hidden" type="checkbox" value="2"
                         name="day"></label>
@@ -187,7 +187,7 @@
                   <td class="calendar__item"><label>8<input class="visually-hidden" type="checkbox" value="8"
                         name="day"></label>
                   </td>
-                </tr>
+
                 <tr class="calendar__row">
                   <td class="calendar__item"><label>9<input class="visually-hidden" type="checkbox" value="9"
                         name="day"></label>
@@ -210,7 +210,7 @@
                   <td class="calendar__item"><label>15<input class="visually-hidden" type="checkbox" value="15"
                         name="day"></label>
                   </td>
-                </tr>
+
                 <tr class="calendar__row">
                   <td class="calendar__item"><label>16<input class="visually-hidden" type="checkbox" value="16"
                         name="day"></label>
@@ -233,7 +233,7 @@
                   <td class="calendar__item"><label>22<input class="visually-hidden" type="checkbox" value="22"
                         name="day"></label>
                   </td>
-                </tr>
+
                 <tr class="calendar__row">
                   <td class="calendar__item"><label>23<input class="visually-hidden" type="checkbox" value="23"
                         name="day"></label>
@@ -256,7 +256,7 @@
                   <td class="calendar__item"><label>29<input class="visually-hidden" type="checkbox" value="29"
                         name="day"></label>
                   </td>
-                </tr>
+
                 <tr class="calendar__row">
                   <td class="calendar__item"><label>30<input class="visually-hidden" type="checkbox" value="30"
                         name="day"></label>
@@ -279,7 +279,7 @@
                   <td class="calendar__item"><label>5<input class="visually-hidden" type="checkbox" value="5"
                         name="day"></label>
                   </td>
-                </tr>
+
               </table>
               <a class="form-section__button" href="#Step-2">Следующий шаг</a>
             </li>
@@ -304,43 +304,33 @@
                 <li class="form-section__country">
                   <button class="form-section__country-selector">Добавить страну</button>
                   <div class="form-section__box">
-                    <table class="alphabet form-section__alphabet">
-                      <tr class="alphabet__row">
-                        <td class="alphabet__cell">А</td>
-                        <td class="alphabet__cell">Б</td>
-                        <td class="alphabet__cell">В</td>
-                        <td class="alphabet__cell">Г</td>
-                        <td class="alphabet__cell">Д</td>
-                      </tr>
-                      <tr class="alphabet__row">
-                        <td class="alphabet__cell">Е</td>
-                        <td class="alphabet__cell">З</td>
-                        <td class="alphabet__cell">И</td>
-                        <td class="alphabet__cell">К</td>
-                        <td class="alphabet__cell">Л</td>
-                      </tr>
-                      <tr class="alphabet__row">
-                        <td class="alphabet__cell">М</td>
-                        <td class="alphabet__cell">Н</td>
-                        <td class="alphabet__cell">О</td>
-                        <td class="alphabet__cell">П</td>
-                        <td class="alphabet__cell">Р</td>
-                      </tr>
-                      <tr class="alphabet__row">
-                        <td class="alphabet__cell">С</td>
-                        <td class="alphabet__cell">Т</td>
-                        <td class="alphabet__cell">У</td>
-                        <td class="alphabet__cell">Ф</td>
-                        <td class="alphabet__cell">Х</td>
-                      </tr>
-                      <tr class="alphabet__row">
-                        <td class="alphabet__cell">Ч</td>
-                        <td class="alphabet__cell">Ш</td>
-                        <td class="alphabet__cell">Э</td>
-                        <td class="alphabet__cell">Ю</td>
-                        <td class="alphabet__cell">Я</td>
-                      </tr>
-                    </table>
+                    <ul class="alphabet form-section__alphabet">
+                      <li class="alphabet__item">А</li>
+                      <li class="alphabet__item">Б</li>
+                      <li class="alphabet__item">В</li>
+                      <li class="alphabet__item">Г</li>
+                      <li class="alphabet__item">Д</li>
+                      <li class="alphabet__item">Е</li>
+                      <li class="alphabet__item">З</li>
+                      <li class="alphabet__item">И</li>
+                      <li class="alphabet__item">К</li>
+                      <li class="alphabet__item">Л</li>
+                      <li class="alphabet__item">М</li>
+                      <li class="alphabet__item">Н</li>
+                      <li class="alphabet__item">О</li>
+                      <li class="alphabet__item">П</li>
+                      <li class="alphabet__item">Р</li>
+                      <li class="alphabet__item">С</li>
+                      <li class="alphabet__item">Т</li>
+                      <li class="alphabet__item">У</li>
+                      <li class="alphabet__item">Ф</li>
+                      <li class="alphabet__item">Х</li>
+                      <li class="alphabet__item">Ч</li>
+                      <li class="alphabet__item">Ш</li>
+                      <li class="alphabet__item">Э</li>
+                      <li class="alphabet__item">Ю</li>
+                      <li class="alphabet__item">Я</li>
+                    </ul>
                     <ul class="countries-list form-section__countries-list">
                       <li class="countries-list__item">Австралия</li>
                       <li class="countries-list__item">Австрия</li>
@@ -391,7 +381,7 @@
 
   <footer class="main-footer">
     <div class="centering-wrapper">
-      <a class="logo main-footer__logo" href="#"><img src="https://via.placeholder.com/11x21"
+      <a class="logo main-footer__logo" href="index.html"><img src="https://via.placeholder.com/11x21"
           alt="Логотип туристического сервиса Погнали"></a>
       <ul class="social main-footer__social">
         <li class="social__item"><a href="#"><img src="https://via.placeholder.com/11x21" alt="Мы в Фейсбуке"></a></li>
