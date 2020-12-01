@@ -1,0 +1,22 @@
+.main-page {
+  &__text {
+    @include text(16px, 22px, rgba(255, 255, 255, 1), 300);
+
+    &--bold {
+      font-weight: 700;
+    }
+  }
+
+  &__subtitle {
+    margin-bottom: 19px;
+
+    @include text(24px, 24px, rgba(255, 141, 48, 1), 700);
+  }
+
+  &__button {
+    background-color: rgba(255, 215, 75, 1);
+    border-radius: 10px;
+
+    @include text(18px, 18px, rgba(29, 46, 91, 1), 700);
+  }
+}

@@ -1,0 +1,34 @@
+.directions {
+  background-color: rgba(237, 239, 246, 1);
+  padding-top: 101px;
+  border-radius: 30px;
+
+  &__text {
+    color: rgba(68, 68, 68, 1);
+  }
+
+  &__list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  &__container {
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 10px;
+  }
+
+  &__subtitle {
+    @include text(21px, 21px, rgba(0, 0, 0, 1), 700);
+  }
+
+  &__slogan {
+    @include text(16px, 18px, rgba(68, 68, 68, 1), 500);
+    opacity: 0.3;
+  }
+
+  &__count {
+    @include text(16px, 20px, rgba(22, 28, 53, 1), 500);
+    opacity: 0.3;
+  }
+}

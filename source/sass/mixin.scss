@@ -1,0 +1,8 @@
+@mixin text($size, $height, $color, $weight: 400, $style: normal) {
+  font-family: "Blogger Sans", "Arial", sans-serif;
+  font-size: $size;
+  line-height: $height;
+  font-style: $style;
+  font-weight: $weight;
+  color: $color;
+}
