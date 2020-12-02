@@ -2,35 +2,35 @@
   background-color: rgba(237, 239, 246, 1);
   padding-top: 101px;
   border-radius: 30px;
+}
 
-  .directions__text {
-    color: rgba(68, 68, 68, 1);
-  }
+.directions__text {
+  color: rgba(68, 68, 68, 1);
+}
 
-  .directions__list {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-  }
+.directions__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
 
-  .directions__container {
-    background-color: rgba(255, 255, 255, 1);
-    border-radius: 10px;
-  }
+.directions__container {
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 10px;
+}
 
-  .directions__subtitle {
-    @include text(21px, 21px, rgba(0, 0, 0, 1), 700);
-  }
+.directions__subtitle {
+  @include text(21px, 21px, rgba(0, 0, 0, 1), 700);
+}
 
-  .directions__slogan {
-    opacity: 0.3;
+.directions__slogan {
+  opacity: 0.3;
 
-    @include text(16px, 18px, rgba(68, 68, 68, 1), 500);
-  }
+  @include text(16px, 18px, rgba(68, 68, 68, 1), 500);
+}
 
-  .directions__count {
-    opacity: 0.3;
+.directions__count {
+  opacity: 0.3;
 
-    @include text(16px, 20px, rgba(22, 28, 53, 1), 500);
-  }
+  @include text(16px, 20px, rgba(22, 28, 53, 1), 500);
 }

@@ -23,14 +23,14 @@
       background-color: rgba(255, 189, 48, 1);
     }
   }
+}
 
-  .button__text {
-    text-transform: uppercase;
+.button__text {
+  text-transform: uppercase;
 
-    &--style-1 {
-      .button:active & {
-        opacity: 0.3;
-      }
+  &--style-1 {
+    .button:active & {
+      opacity: 0.3;
     }
   }
 }

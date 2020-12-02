@@ -2,83 +2,83 @@
   background-color: rgba(25, 33, 68, 1);
   padding: 102px 0 31px 0;
   border-radius: 30px;
+}
 
-  .companions__title {
-    margin-bottom: 19px;
+.companions__title {
+  margin-bottom: 19px;
+}
+
+.companions__text {
+  margin-bottom: 25px;
+}
+
+.companions__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.companions__item {
+  position: relative;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  text-align: center;
+
+  &:hover {
+    box-shadow: (0 4px 9px rgba(0, 0, 0, 0.16));
   }
+}
 
-  .companions__text {
-    margin-bottom: 25px;
-  }
+.companions__container {
+  background-color: rgba(255, 255, 255, 1);
+  border: 1px solid transparent;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
 
-  .companions__list {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-  }
+.companions__flags {
+  text-align: center;
+  padding: 0;
+  margin: -11px 0 0 0;
+  list-style: none;
+}
 
-  .companions__item {
-    position: relative;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    text-align: center;
+.companions__subtitle {
+  position: relative;
+  padding-left: 16px;
+  margin: 13px 0 0 0;
 
-    &:hover {
-      box-shadow: (0 4px 9px rgba(0, 0, 0, 0.16));
-    }
-  }
+  @include text(21px, 21px, rgba(29, 46, 91, 1), 700);
 
-  .companions__container {
-    background-color: rgba(255, 255, 255, 1);
-    border: 1px solid transparent;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-  }
-
-  .companions__flags {
-    text-align: center;
-    padding: 0;
-    margin: -11px 0 0 0;
-    list-style: none;
-  }
-
-  .companions__subtitle {
-    position: relative;
-    padding-left: 16px;
-    margin: 13px 0 0 0;
-
-    @include text(21px, 21px, rgba(29, 46, 91, 1), 700);
-
-    &::before {
-      position: absolute;
-      left: 0;
-      top: 0.4em;
-      content: "";
-      width: 6px;
-      height: 6px;
-      background-color: $offline;
-      border-radius: 50%;
-    }
-
-    &--online {
-      &::before {
-        background-color: $online;
-      }
-    }
-  }
-
-  .companions__level {
+  &::before {
     position: absolute;
-    top: 17px;
-    left: 17px;
+    left: 0;
+    top: 0.4em;
+    content: "";
+    width: 6px;
+    height: 6px;
+    background-color: $offline;
+    border-radius: 50%;
   }
 
-  .companions__tags {
-    margin: 15px 0 0 0;
+  &--online {
+    &::before {
+      background-color: $online;
+    }
   }
+}
 
-  .companions__transport {
-    justify-content: center;
-    margin: 14px 0 0 0;
-  }
+.companions__level {
+  position: absolute;
+  top: 17px;
+  left: 17px;
+}
+
+.companions__tags {
+  margin: 15px 0 0 0;
+}
+
+.companions__transport {
+  justify-content: center;
+  margin: 14px 0 0 0;
 }

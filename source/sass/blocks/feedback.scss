@@ -3,35 +3,35 @@
   border-radius: 30px;
   padding: 105px 0 44px 0;
   text-align: center;
+}
 
-  .feedback__link {
-    color: rgba(255, 215, 75, 1);
+.feedback__link {
+  color: rgba(255, 215, 75, 1);
 
-    &:hover,
-    &:focus {
-      color: rgba(255, 141, 48, 1);
-    }
-
-    &:active {
-      color: rgba(255, 141, 48, 1);
-      opacity: 0.3;
-    }
+  &:hover,
+  &:focus {
+    color: rgba(255, 141, 48, 1);
   }
 
-  .feedback__email {
-    border: none;
-    border-radius: 10px;
-
-    &::placeholder {
-      padding: 22px 25px;
-
-      @include text(18px, 18px, rgba(68, 68, 68, 1), 700);
-    }
+  &:active {
+    color: rgba(255, 141, 48, 1);
+    opacity: 0.3;
   }
+}
 
-  .feedback__phone,
-  .feedback__email {
-    line-height: 22px;
-    color: rgba(255, 215, 75, 1);
+.feedback__email {
+  border: none;
+  border-radius: 10px;
+
+  &::placeholder {
+    padding: 22px 25px;
+
+    @include text(18px, 18px, rgba(68, 68, 68, 1), 700);
   }
+}
+
+.feedback__phone,
+.feedback__email {
+  line-height: 22px;
+  color: rgba(255, 215, 75, 1);
 }

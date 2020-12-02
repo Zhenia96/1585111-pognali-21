@@ -1,10 +1,10 @@
 .site-navigation {
   list-style: none;
+}
 
-  .site-navigation__item {
-    text-align: center;
-    text-transform: uppercase;
+.site-navigation__item {
+  text-align: center;
+  text-transform: uppercase;
 
-    @include text(30px, 35px, rgba(25, 33, 68, 1), 500);
-  }
+  @include text(30px, 35px, rgba(25, 33, 68, 1), 500);
 }

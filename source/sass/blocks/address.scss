@@ -1,31 +1,29 @@
-.address {
-  .address__box {
-    background-color: rgba(255, 215, 75, 1);
-    padding: 65px 0 35px 0;
-    border-radius: 30px;
+.address__box {
+  background-color: rgba(255, 215, 75, 1);
+  padding: 65px 0 35px 0;
+  border-radius: 30px;
+}
+
+.address__text {
+  margin: 0 0 32px 0;
+
+  @include text(16px, 22px, rgba(29, 46, 91, 1), 700);
+}
+
+.address__button {
+  background-color: rgba(255, 215, 75, 1);
+  border: 3px solid rgba(25, 33, 68, 1);
+  border-radius: 20px;
+
+  @include text(18px, 18px, rgba(29, 46, 91, 1), 700);
+
+  &:hover,
+  &:focus {
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(25, 33, 68, 1);
   }
 
-  .address__text {
-    margin: 0 0 32px 0;
-
-    @include text(16px, 22px, rgba(29, 46, 91, 1), 700);
-  }
-
-  .address__button {
-    background-color: rgba(255, 215, 75, 1);
-    border: 3px solid rgba(25, 33, 68, 1);
-    border-radius: 20px;
-
-    @include text(18px, 18px, rgba(29, 46, 91, 1), 700);
-
-    &:hover,
-    &:focus {
-      color: rgba(255, 255, 255, 1);
-      background-color: rgba(25, 33, 68, 1);
-    }
-
-    &:active {
-      color: rgba(255, 255, 255, 0.3);
-    }
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
   }
 }

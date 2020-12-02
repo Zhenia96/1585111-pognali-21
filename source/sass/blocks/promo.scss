@@ -3,50 +3,50 @@
   background-image: url("../../../img/globe-back-mobile-1.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
+}
 
-  .promo__slogan {
-    text-transform: uppercase;
-    text-align: center;
+.promo__slogan {
+  text-transform: uppercase;
+  text-align: center;
 
-    @include text(36px, 40px, rgba(255, 255, 255, 1), 700);
+  @include text(36px, 40px, rgba(255, 255, 255, 1), 700);
+}
+
+.promo__guide {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  counter-reset: list-number;
+}
+
+.promo__guide-item {
+  position: relative;
+  background-color: rgba(255, 141, 48, 1);
+  padding-right: 30px;
+  border-radius: 10px;
+
+  @include text(18px, 18px, rgba(22, 28, 53, 1), 700);
+
+  &::before {
+    position: absolute;
+    top: 25%;
+    right: 21px;
+    counter-increment: list-number;
+    content: counter(list-number);
+    color: rgba(255, 255, 255, 1);
   }
 
-  .promo__guide {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    counter-reset: list-number;
+  &--#{type-2} {
+    background-color: rgba(255, 165, 48, 1);
   }
-
-  .promo__guide-item {
-    position: relative;
-    background-color: rgba(255, 141, 48, 1);
-    padding-right: 30px;
-    border-radius: 10px;
-
-    @include text(18px, 18px, rgba(22, 28, 53, 1), 700);
-
-    &::before {
-      position: absolute;
-      top: 25%;
-      right: 21px;
-      counter-increment: list-number;
-      content: counter(list-number);
-      color: rgba(255, 255, 255, 1);
-    }
-
-    &--#{type-2} {
-      background-color: rgba(255, 165, 48, 1);
-    }
-    &--#{type-3} {
-      background-color: rgba(255, 189, 48, 1);
-    }
-    &--#{type-4} {
-      background-color: rgba(255, 215, 75, 1);
-    }
+  &--#{type-3} {
+    background-color: rgba(255, 189, 48, 1);
   }
-
-  .promo__box {
-    background-color: rgba(22, 28, 53, 1);
+  &--#{type-4} {
+    background-color: rgba(255, 215, 75, 1);
   }
+}
+
+.promo__box {
+  background-color: rgba(22, 28, 53, 1);
 }
