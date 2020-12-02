@@ -3,12 +3,12 @@
   padding: 106px 0 38px 0;
   border-radius: 30px;
 
-  &__list {
+  .profile__list {
     margin: 44px 0 31px 0;
     counter-reset: profile-counter;
   }
 
-  &__item {
+  .profile__item {
     position: relative;
     border-top: 1px solid rgba(225, 227, 233, 1);
     border-bottom: 1px solid rgba(225, 227, 233, 1);
@@ -45,14 +45,14 @@
     }
   }
 
-  &__service,
-  &__price {
+  .profile__service,
+  .profile__price {
     margin: 0 0 6px 0;
 
     @include text(16px, 16px, rgba(68, 68, 68, 1), 300);
   }
 
-  &__link {
+  .profile__link {
     @include text(16px, 16px, rgba(19, 37, 118, 1), 700);
   }
 }

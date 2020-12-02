@@ -2,7 +2,7 @@
   padding: 0;
   list-style: none;
 
-  &__item {
+  .contacts__item {
     text-transform: uppercase;
 
     @include text(16px, 18px, rgba(25, 33, 68, 1), 700);

@@ -1,17 +1,17 @@
 .address {
-  &__box {
+  .address__box {
     background-color: rgba(255, 215, 75, 1);
     padding: 65px 0 35px 0;
     border-radius: 30px;
   }
 
-  &__text {
+  .address__text {
     margin: 0 0 32px 0;
 
     @include text(16px, 22px, rgba(29, 46, 91, 1), 700);
   }
 
-  &__button {
+  .address__button {
     background-color: rgba(255, 215, 75, 1);
     border: 3px solid rgba(25, 33, 68, 1);
     border-radius: 20px;

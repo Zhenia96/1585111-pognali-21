@@ -4,7 +4,7 @@
   padding: 105px 0 44px 0;
   text-align: center;
 
-  &__link {
+  .feedback__link {
     color: rgba(255, 215, 75, 1);
 
     &:hover,
@@ -18,7 +18,7 @@
     }
   }
 
-  &__email {
+  .feedback__email {
     border: none;
     border-radius: 10px;
 
@@ -29,8 +29,8 @@
     }
   }
 
-  &__phone,
-  &__email {
+  .feedback__phone,
+  .feedback__email {
     line-height: 22px;
     color: rgba(255, 215, 75, 1);
   }
