@@ -5,6 +5,14 @@
   background-size: 100% 100%;
 }
 
+.promo__text {
+  @include text(16px, 22px, rgba(255, 255, 255, 1), 300);
+
+  &--bold {
+    font-weight: 700;
+  }
+}
+
 .promo__slogan {
   text-transform: uppercase;
   text-align: center;
@@ -50,3 +58,4 @@
 .promo__box {
   background-color: rgba(22, 28, 53, 1);
 }
+
