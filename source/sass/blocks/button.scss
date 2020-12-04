@@ -1,0 +1,36 @@
+.button {
+  text-decoration: none;
+
+  &--triangle {
+    position: relative;
+    text-align: left;
+
+    &::after {
+      position: absolute;
+      content: "\25BA";
+    }
+  }
+
+  &--style-1 {
+    background-color: rgba(255, 215, 75, 1);
+
+    &:hover,
+    &:focus {
+      background-color: rgba(255, 189, 48, 1);
+    }
+
+    &:active {
+      background-color: rgba(255, 189, 48, 1);
+    }
+  }
+}
+
+.button__text {
+  text-transform: uppercase;
+
+  &--style-1 {
+    .button:active & {
+      opacity: 0.3;
+    }
+  }
+}

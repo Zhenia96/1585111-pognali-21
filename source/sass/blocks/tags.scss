@@ -1,0 +1,10 @@
+.tags {
+  padding: 0;
+  list-style: none;
+}
+
+.tags__item {
+  display: inline;
+
+  @include text(16px, 18px, rgba(68, 68, 68, 1));
+}

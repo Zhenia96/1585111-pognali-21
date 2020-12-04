@@ -1,0 +1,64 @@
+.profile {
+  background-color: rgba(230, 232, 241, 1);
+  padding: 106px 0 38px 0;
+  border-radius: 30px;
+}
+
+.profile__title {
+  margin-bottom: 19px;
+
+  @include text(24px, 24px, rgba(255, 141, 48, 1), 700);
+}
+
+.profile__list {
+  margin: 44px 0 31px 0;
+  counter-reset: profile-counter;
+}
+
+.profile__item {
+  position: relative;
+  border-top: 1px solid rgba(225, 227, 233, 1);
+  border-bottom: 1px solid rgba(225, 227, 233, 1);
+  box-sizing: border-box;
+  padding: 14px 0 10px 0;
+  margin: -1px 45px 0 0;
+  counter-increment: profile-counter;
+
+  &::before {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 11px;
+    right: -11px;
+    color: rgba(255, 255, 255, 1);
+    content: counter(profile-counter);
+    background-color: rgba(255, 141, 48, 1);
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+  }
+
+  &--second {
+    &::before {
+      background-color: rgba(255, 189, 48, 1);
+    }
+  }
+
+  &--third {
+    &::before {
+      background-color: rgba(255, 215, 75, 1);
+    }
+  }
+}
+
+.profile__service,
+.profile__price {
+  margin: 0 0 6px 0;
+
+  @include text(16px, 16px, rgba(68, 68, 68, 1), 300);
+}
+
+.profile__link {
+  @include text(16px, 16px, rgba(19, 37, 118, 1), 700);
+}
