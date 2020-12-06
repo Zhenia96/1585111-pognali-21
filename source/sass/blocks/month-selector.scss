@@ -1,0 +1,11 @@
+.month-selector {
+  border-top: 1px solid rgba(214, 217, 230, 1);
+  border-bottom: 1px solid rgba(214, 217, 230, 1);
+}
+
+.month-selector__month {
+  text-align: center;
+  border: none;
+
+  @include text(20px, 20px, rgba(29, 46, 91, 1), 700);
+}
