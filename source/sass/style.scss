@@ -1,17 +1,28 @@
 @import "fonts.scss";
 @import "variables.scss";
 @import "mixin.scss";
+//common blocks
+@import "blocks/page.scss";
 @import "blocks/centering-wrapper.scss";
 @import "blocks/visually-hidden.scss";
+@import "blocks/interaction-with-element.scss";
 @import "blocks/link.scss";
 @import "blocks/tags.scss";
+@import "blocks/title.scss";
 @import "blocks/transport.scss";
 @import "blocks/button.scss";
+@import "blocks/worlds-parts.scss";
+@import "blocks/alphabet.scss";
+@import "blocks/countries-list.scss";
 @import "blocks/authorization.scss";
 @import "blocks/site-navigation.scss";
 @import "blocks/contacts.scss";
 @import "blocks/contacts-v2.scss";
 @import "blocks/social.scss";
+@import "blocks/main-footer.scss";
+@import "blocks/month-selector.scss";
+@import "blocks/calendar.scss";
+//index
 @import "blocks/promo.scss";
 @import "blocks/about-project.scss";
 @import "blocks/directions.scss";
@@ -19,8 +30,11 @@
 @import "blocks/profile.scss";
 @import "blocks/feedback.scss";
 @import "blocks/address.scss";
-@import "blocks/main-footer.scss";
-@import "blocks/title.scss";
+//form
 @import "blocks/user-profile.scss";
 @import "blocks/plans.scss";
 @import "blocks/form-section.scss";
+//catalog
+@import "blocks/filter-country.scss";
+@import "blocks/filter-people.scss";
+@import "blocks/catalog-people.scss";

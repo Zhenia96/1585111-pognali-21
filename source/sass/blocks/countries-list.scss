@@ -1,0 +1,10 @@
+.countries-list {
+  padding: 20px 19px;
+  list-style: none;
+
+  border: 1px solid rgba(203, 206, 217, 1);
+}
+
+.countries-list__item {
+  @include text(16px, 22px, $text-grey);
+}

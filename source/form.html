@@ -1,17 +1,18 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Погнали</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="page__body">
 
   <header class="main-header">
     <div class="centering-wrapper">
       <a class="logo main-header__logo" href="#"><img src="https://via.placeholder.com/11x21"
-          alt="Логотип турис тического сервиса Погнали"></a>
+          alt="Логотип туристического сервиса Погнали"></a>
       <button class="main-header__toggle" type="button" aria-label="Открыть главное
       меню"></button>
       <nav class="main-header__navigation">
@@ -22,20 +23,25 @@
         </ul>
       </nav>
       <div class="user-menu main-header__user-menu">
-        <a class="user-menu__item" href="#">Авторизация</a>
+        <a class="button button--style-1 authorization main-header__authorization" href="#"><span
+            class="button__text">Авторизация</span></a>
+        <ul class="contacts main-header__contacts" aria-label="Наши контакты">
+          <li class="contacts__item"><a class="link" href="tel:+88005558628"><span class="visually-hidden">Наш номер
+                телефона:</span>8 800 555-86-28</a></li>
+          <li class="contacts__item"><a class="link" href="mailto:mail@htmlacademy.ru"><span
+                class="visually-hidden">Наша
+                почта:</span>mail@htmlacademy.ru</a></li>
+        </ul>
+        <ul class="social main-header__social">
+          <li class="interaction-with-element social__item"><a class="link" href="#"><img
+                src="https://via.placeholder.com/11x21" alt="Мы в Фейсбуке"></a></li>
+          <li class="interaction-with-element social__item"><a class="link" href="#"><img
+                src="https://via.placeholder.com/23x12" alt="Мы в Вконтакте"></a></li>
+          <li class="interaction-with-element social__item"><a class="link" href="#"><img
+                src="https://via.placeholder.com/18x18" alt="Мы в Инстаграме"></a>
+          </li>
+        </ul>
       </div>
-      <ul class="contacts main-header__contacts" aria-label="Наши контакты">
-        <li class="contacts__item"><a class="link" href="tel:+88005558628"><span class="visually-hidden">Наш номер
-              телефона:</span>8 800 555-86-28</a></li>
-        <li class="contacts__item"><a class="link" href="mailto:mail@htmlacademy.ru"><span class="visually-hidden">Наша
-              почта:</span>mail@htmlacademy.ru</a></li>
-      </ul>
-      <ul class="social main-header__social">
-        <li class="social__item"><a href="#"><img src="https://via.placeholder.com/11x21" alt="Мы в Фейсбуке"></a></li>
-        <li class="social__item"><a href="#"><img src="https://via.placeholder.com/23x12" alt="Мы в Вконтакте"></a></li>
-        <li class="social__item"><a href="#"><img src="https://via.placeholder.com/18x18" alt="Мы в Инстаграме"></a>
-        </li>
-      </ul>
     </div>
   </header>
 
@@ -46,14 +52,13 @@
     <section class="user-profile">
       <div class="centering-wrapper">
         <h2 class="visually-hidden">Профиль пользователя</h2>
-        <div class="user-profile__container">
-          <p class="level"><span class="level__number">80 </span><span class="level__text">level</span></p>
-          <div class="avatar"><img class="avatar__picture" src="https://via.placeholder.com/100x100"
-              alt="Ваш Аватар, на котором изображён рыжий мужик в очках и шапке, на фоне снега.">
-          </div>
+        <p class="level user-profile__level"><span class="level__number">80 </span><span
+            class="level__text">level</span></p>
+        <div class="avatar user-profile__avatar"><img class="avatar__picture" src="https://via.placeholder.com/100x100"
+            alt="Ваш Аватар, на котором изображён рыжий мужик в очках и шапке, на фоне снега.">
         </div>
         <form class="user-profile__form" action="https://echo.htmlacademy.ru" method="POST">
-          <label class="button user-profile__button" for="user-avatar">сменить фото</label>
+          <label class="user-profile__button" for="user-avatar">сменить фото</label>
           <input class="visually-hidden" id="user-avatar" type="file" name="avatar" accept="image/*">
           <input class="visually-hidden" type="submit">
           <!-- Js сам нажмет на эту кнопку, когда картинка будет выбрана -->
@@ -82,21 +87,21 @@
 
     <section class="plans">
       <div class="centering-wrapper">
-        <h2 class="title plans__title">Мои планы:</h2>
+        <h2 class="plans__title">Мои планы:</h2>
         <ol class="plans__list">
           <li class="plans__item">
-            <h3 class="plans__title plans__title--decor">Франция, Италия</h3>
-            <p class="plans__text plans__text--decor">3 попутчика</p>
-            <p class="plans__date plans__date--decor"><time datetime="2019-03-26">1 мар</time> &mdash; <time
-                datetime="2019-03-29">29 мар</time></p>
-            <a class="link plans_link plans_link--decor" href="#">изменить</a>
+            <h3 class="plans__subtitle">Франция, Италия</h3>
+            <p class="plans__text">3 попутчика</p>
+            <p class="plans__date"><time datetime="2019-03-26">1 мар</time> &mdash; <time datetime="2019-03-29">29
+                мар</time></p>
+            <a class="link plans__link" href="#">изменить</a>
           </li>
           <li class="plans__item">
-            <h3 class="plans__title plans__title--decor">Таиланд, Индонезия</h3>
-            <p class="plans__text plans__text--decor">1 попутчик</p>
-            <p class="plans__date plans__date--decor"><time datetime="2019-07-01">1 июл</time> &mdash; <time
-                datetime="2019-07-15">15 июл</time></p>
-            <a class="link plans_link plans_link--decor" href="#">изменить</a>
+            <h3 class="plans__subtitle">Таиланд, Индонезия</h3>
+            <p class="plans__text">1 попутчик</p>
+            <p class="plans__date"><time datetime="2019-07-01">1 июл</time> &mdash; <time datetime="2019-07-15">15
+                июл</time></p>
+            <a class="link plans__link" href="#">изменить</a>
           </li>
         </ol>
       </div>
@@ -104,11 +109,11 @@
 
     <section class="form-section">
       <div class="centering-wrapper">
-        <h2 class="title form-section__title">Добавить план:</h2>
-        <ul class="pagination form-section__pagination">
-          <li class="pagination__item"></li>
-          <li class="pagination__item"></li>
-          <li class="pagination__item"></li>
+        <h2 class="form-section__title">Добавить план:</h2>
+        <ul class="form-section__pagination">
+          <li class="form-section__pagination-item form-section__pagination-item--current"></li>
+          <li class="form-section__pagination-item"></li>
+          <li class="form-section__pagination-item"></li>
         </ul>
         <form class="form-section__form" action="https://echo.htmlacademy.ru" method="POST">
           <ol class="form-section__list">
@@ -116,21 +121,31 @@
               <h3 class="form-section__subtitle">Шаг 1.<br>Даты пребывания</h3>
               <p class="form-section__text">Укажите предпочтительное количество попутчиков, которых
                 вы хотели бы позвать в поездку, и ее предполагаемую длительность.</p>
-              <label class="form-section__label" for="form-companions-count">ищу попутчиков: <span>чел.</span></label>
-              <input class="form-section__field" id="form-companions-count" type="number" name="companions-count"
-                min="0" value="2">
-              <label class="form-section__label" for="form-duration">длительность: <span>дн.</span></label>
-              <input class="form-section__field" id="form-duration" type="number" name="duration" min="1" value="3">
-              <label class="form-section__label"><input type="checkbox" name="with-children" value="true" checked>Можно
+              <label class="form-section__label" for="form-companions-count">ищу попутчиков: <span
+                  class="form-section__unit">чел.</span></label>
+              <div class="form-section__field-box">
+                <button class="form-section__decrease" type="button" aria-label="уменьшить">-</button>
+                <input class="form-section__field" id="form-companions-count" type="text" name="companions-count"
+                  value="2">
+                <button class="form-section__increase" type="button" aria-label="увеличить">+</button>
+              </div>
+              <label class="form-section__label" for="form-duration">длительность: <span
+                  class="form-section__unit">дн.</span></label>
+              <div class="form-section__field-box">
+                <button class="form-section__decrease" type="button" aria-label="уменьшить">-</button>
+                <input class="form-section__field" id="form-duration" type="text" name="duration" value="3">
+                <button class="form-section__increase" type="button" aria-label="увеличить">+</button>
+              </div>
+              <label class="form-section__label form-section__label--with-child"><input type="checkbox"
+                  name="with-children" value="true" checked>Можно
                 с детьми</label>
-              <div class="month-selector form-section__month" aria-label="Выберите месяц поездки">
-                <label class="visually-hidden" aria-hidden="true"><input type="month" name="month"
-                    value="2019-03"></label>
-                <div class="visually-hidden month-selector__box">
-                  <button class="month-selector__back" aria-label="Предыдущий месяц"></button>
-                  <span class="month-selector__month">Март 2019</span>
-                  <button class="month-selector__next" aria-label="Следующий месяц"></button>
-                </div>
+              <div class="month-selector form-section__month">
+                <button class="month-selector__button month-selector__button--back" type="button"
+                  aria-label="Предыдущий месяц"></button>
+                <label aria-label="Выберите месяц"><input class="month-selector__month" type="text" name="month"
+                    value="Март 2019"></label>
+                <button class="month-selector__button month-selector__button--next" type="button"
+                  aria-label="Следующий месяц"></button>
               </div>
               <table class="calendar form-section__calendar" aria-label="Выберите день поездки">
                 <tr class="calendar__row">
@@ -139,8 +154,10 @@
                   <th class="calendar__heading">С<span class="visually-hidden">реда</span></th>
                   <th class="calendar__heading">Ч<span class="visually-hidden">етверг</span></th>
                   <th class="calendar__heading">П<span class="visually-hidden">ятница</span></th>
-                  <th class="calendar__heading">С<span class="visually-hidden">уббота</span></th>
-                  <th class="calendar__heading">В<span class="visually-hidden">оскресенье</span></th>
+                  <th class="calendar__heading calendar__heading--weekend">С<span class="visually-hidden">уббота</span>
+                  </th>
+                  <th class="calendar__heading calendar__heading--weekend">В<span
+                      class="visually-hidden">оскресенье</span></th>
                 </tr>
                 <tr class="calendar__row">
                   <td class="calendar__item"><label>23<input class="visually-hidden" type="checkbox" value="23"
@@ -281,55 +298,64 @@
                   </td>
                 </tr>
               </table>
-              <a class="form-section__button" href="#Step-2">Следующий шаг</a>
+              <a class="button button--triangle button--style-1 form-section__button" href="#Step-2">Следующий шаг</a>
             </li>
             <li class="form-section__item" id="Step-2">
               <h3 class="form-section__subtitle">Шаг 2.<br>Маршрут</h3>
               <p class="form-section__text">Укажите страны, которые вы хотели бы посетить. Это может быть одна или сразу
                 несколько.</p>
               <ol class="form-section__route">
-                <li class="form-section__country">
+                <li class="form-section__route-item">
                   <input class="visually-hidden" type="text" name="country-1" value="Босния и Герцеговина"
                     aria-hidden="true">
-                  <button class="form-section__country-selector">Босния и Герцеговина</button>
+                  <div class="form-section__selector">
+                    <button class="form-section__selector-toggle" type="button">Босния и Герцеговина</button>
+                    <img class="form-section__selector-flag" src="https://via.placeholder.com/35x24"
+                      alt="Флаг Боснии и Герцеговины">
+                    <button class="form-section__selector-close" type="button"></button>
+                  </div>
                 </li>
-                <li class="form-section__country">
+                <li class="form-section__route-item">
                   <input class="visually-hidden" type="text" name="country-2" value="Чехия" aria-hidden="true">
-                  <button class="form-section__country-selector">Чехия</button>
+                  <div class="form-section__selector">
+                    <button class="form-section__selector-toggle" type="button">Чехия</button>
+                    <img class="form-section__selector-flag" src="https://via.placeholder.com/35x24" alt="Флаг Чехии">
+                    <button class="form-section__selector-close" type="button"></button>
+                  </div>
                 </li>
-                <li class="form-section__country">
+                <li class="form-section__route-item">
                   <input class="visually-hidden" type="text" name="country-3" value="" aria-hidden="true">
-                  <button class="form-section__country-selector">Выберите страну</button>
-                </li>
-                <li class="form-section__country">
-                  <button class="form-section__country-selector">Добавить страну</button>
+                  <div class="form-section__selector">
+                    <button class="form-section__selector-toggle" type="button">Выберите страну</button>
+                    <button class="form-section__selector-close" type="button"></button>
+                  </div>
                   <div class="form-section__box">
                     <ul class="alphabet form-section__alphabet">
-                      <li class="alphabet__item">А</li>
-                      <li class="alphabet__item">Б</li>
-                      <li class="alphabet__item">В</li>
-                      <li class="alphabet__item">Г</li>
-                      <li class="alphabet__item">Д</li>
-                      <li class="alphabet__item">Е</li>
-                      <li class="alphabet__item">З</li>
-                      <li class="alphabet__item">И</li>
-                      <li class="alphabet__item">К</li>
-                      <li class="alphabet__item">Л</li>
-                      <li class="alphabet__item">М</li>
-                      <li class="alphabet__item">Н</li>
-                      <li class="alphabet__item">О</li>
-                      <li class="alphabet__item">П</li>
-                      <li class="alphabet__item">Р</li>
-                      <li class="alphabet__item">С</li>
-                      <li class="alphabet__item">Т</li>
-                      <li class="alphabet__item">У</li>
-                      <li class="alphabet__item">Ф</li>
-                      <li class="alphabet__item">Х</li>
-                      <li class="alphabet__item">Ч</li>
-                      <li class="alphabet__item">Ш</li>
-                      <li class="alphabet__item">Э</li>
-                      <li class="alphabet__item">Ю</li>
-                      <li class="alphabet__item">Я</li>
+                      <li class="alphabet__item"><button class="alphabet__button" type="button">А</button></li>
+                      <li class="alphabet__item"><button class="alphabet__button" type="button">Б</button></li>
+                      <li class="alphabet__item"><button class="alphabet__button" type="button">В</button></li>
+                      <li class="alphabet__item"><button class="alphabet__button" type="button">Г</button></li>
+                      <li class="alphabet__item"><button class="alphabet__button" type="button">Д</button></li>
+                      <li class="alphabet__item"><button class="alphabet__button" type="button">Е</button></li>
+                      <li class="alphabet__item"><button class="alphabet__button" type="button">З</button></li>
+                      <li class="alphabet__item"><button class="alphabet__button" type="button">И</button></li>
+                      <li class="alphabet__item"><button class="alphabet__button" type="button">К</button></li>
+                      <li class="alphabet__item"><button class="alphabet__button" type="button">Л</button></li>
+                      <li class="alphabet__item"><button class="alphabet__button" type="button">М</button></li>
+                      <li class="alphabet__item"><button class="alphabet__button" type="button">Н</button></li>
+                      <li class="alphabet__item"><button class="alphabet__button" type="button">О</button></li>
+                      <li class="alphabet__item"><button class="alphabet__button" type="button">П</button></li>
+                      <li class="alphabet__item"><button class="alphabet__button" type="button">Р</button></li>
+                      <li class="alphabet__item"><button class="alphabet__button" type="button">С</button></li>
+                      <li class="alphabet__item"><button class="alphabet__button" type="button">Т</button></li>
+                      <li class="alphabet__item"><button class="alphabet__button" type="button">У</button></li>
+                      <li class="alphabet__item"><button class="alphabet__button" type="button">Ф</button></li>
+                      <li class="alphabet__item"><button class="alphabet__button" type="button">Х</button></li>
+                      <li class="alphabet__item"><button class="alphabet__button" type="button">Ч</button></li>
+                      <li class="alphabet__item"><button class="alphabet__button" type="button">Ш</button></li>
+                      <li class="alphabet__item"><button class="alphabet__button" type="button">Э</button></li>
+                      <li class="alphabet__item"><button class="alphabet__button" type="button">Ю</button></li>
+                      <li class="alphabet__item"><button class="alphabet__button" type="button">Я</button></li>
                     </ul>
                     <ul class="countries-list form-section__countries-list">
                       <li class="countries-list__item">Австралия</li>
@@ -346,9 +372,15 @@
                     </ul>
                   </div>
                 </li>
+                <li class="form-section__route-item">
+                  <div class="form-section__selector">
+                    <button class="form-section__selector-toggle form-section__selector-toggle--add"
+                      type="button">Добавить страну</button>
+                  </div>
+                </li>
               </ol>
-              <a class="form-section__button" href="#Step-3">Следующий шаг</a>
-              <a class="form-section__button" href="#Step-1">На шаг назад</a>
+              <a class="button button--triangle button--style-1 form-section__button" href="#Step-3">Следующий шаг</a>
+              <a class="interaction-with-element link form-section__button" href="#Step-1">На шаг назад</a>
             </li>
             <li class="form-section__item" id="Step-3">
               <h3 class="form-section__subtitle">Шаг 3.<br>Развлечения</h3>
@@ -356,21 +388,21 @@
                 свободной форме и ставить тэги.</p>
               <ol class="form-section__plans-list">
                 <li class="form-section__plans-item">
-                  <label class="form-section__label form-section__label--step-3" for="plan-1">Босния и Герцеговина<img
+                  <label class="form-section__plans-label" for="plan-1">Босния и Герцеговина<img
                       class="form-section__flag" src="https://via.placeholder.com/35x24"
                       alt="флаг Боснии и Герцеговины"></label>
                   <textarea class="form-section__user-text" id="plan-1" name="user-plans-1"
                     placeholder="План действий"></textarea>
                 </li>
                 <li class="form-section__plans-item">
-                  <label class="form-section__label form-section__label--step-3" for="plan-2">Чехия<img
-                      class="form-section__flag" src="https://via.placeholder.com/35x24" alt="флаг Чехии"></label>
-                  <textarea class="form-section__user-text" id="plan-2" name="user-plans-2" placeholder="План действий">Пить пиво и лазить
-                    по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
+                  <label class="form-section__plans-label" for="plan-2">Чехия<img class="form-section__flag"
+                      src="https://via.placeholder.com/35x24" alt="флаг Чехии"></label>
+                  <textarea class="form-section__user-text" id="plan-2" name="user-plans-2"
+                    placeholder="План действий">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
                 </li>
               </ol>
-              <button class="form-section__button" type="submit">Отправить</button>
-              <a class="form-section__button" href="#Step-2">На шаг назад</a>
+              <button class="button button--style-1 form-section__button" type="submit">Отправить</button>
+              <a class="interaction-with-element link form-section__button" href="#Step-2">На шаг назад</a>
             </li>
           </ol>
         </form>
@@ -389,7 +421,7 @@
         <li class="social__item"><a href="#"><img src="https://via.placeholder.com/18x18" alt="Мы в Инстаграме"></a>
         </li>
       </ul>
-      <p class="developed main-footer__developed">Разработано<a class="developed__logo"
+      <p class="interaction-with-element developed main-footer__developed">Разработано<a class="developed__logo"
           href="https://htmlacademy.ru/intensive/adaptive"><img src="https://via.placeholder.com/27x33"
             alt="Логотип компании HTML Academy"></a></p>
     </div>

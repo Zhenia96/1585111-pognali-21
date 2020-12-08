@@ -1,5 +1,5 @@
 .authorization {
   border-radius: 25px;
 
-  @include text(20px, 20px, rgba(22, 28, 53, 1), 700);
+  @include text(20px, 20px, $text-blue, 700);
 }

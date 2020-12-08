@@ -7,11 +7,11 @@
 .about-project__title {
   margin-bottom: 19px;
 
-  @include text(24px, 24px, rgba(255, 141, 48, 1), 700);
+  @include text(24px, 24px, $text-orange, 700);
 }
 
 .about-project__text {
-  @include text(16px, 22px, rgba(255, 255, 255, 1), 300);
+  @include text(16px, 22px, $text-white, 300);
 
   &--bold {
     font-weight: 700;

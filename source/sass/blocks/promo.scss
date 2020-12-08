@@ -1,12 +1,10 @@
 .promo {
-  background-color: rgba(25, 33, 68, 1);
-  background-image: url("../../../img/globe-back-mobile-1.png");
-  background-repeat: no-repeat;
+  background: rgba(25, 33, 68, 1) url("../../../img/globe-back-mobile-1.png") no-repeat;
   background-size: 100% 100%;
 }
 
 .promo__text {
-  @include text(16px, 22px, rgba(255, 255, 255, 1), 300);
+  @include text(16px, 22px, $text-white, 300);
 
   &--bold {
     font-weight: 700;
@@ -17,7 +15,7 @@
   text-transform: uppercase;
   text-align: center;
 
-  @include text(36px, 40px, rgba(255, 255, 255, 1), 700);
+  @include text(36px, 40px, $text-white, 700);
 }
 
 .promo__guide {
@@ -33,7 +31,7 @@
   padding-right: 30px;
   border-radius: 10px;
 
-  @include text(18px, 18px, rgba(22, 28, 53, 1), 700);
+  @include text(18px, 18px, $text-blue, 700);
 
   &::before {
     position: absolute;
@@ -41,7 +39,7 @@
     right: 21px;
     counter-increment: list-number;
     content: counter(list-number);
-    color: rgba(255, 255, 255, 1);
+    color: $text-white;
   }
 
   &--#{type-2} {

@@ -1,0 +1,23 @@
+.user-profile {
+  background-color: rgba(237, 239, 246, 1);
+}
+
+.user-profile__button {
+  text-transform: uppercase;
+  background-color: rgba(223, 227, 240, 1);
+  border-radius: 20px;
+  cursor: pointer;
+
+  @include text(20px, 18px, $text-blue, 500);
+}
+
+.user-profile__subtitle {
+  text-transform: uppercase;
+
+  @include text(16px, 18px, $text-blue-light, 700);
+}
+
+.user-profile__container {
+  border: 1px solid rgba(203, 206, 217, 1);
+  border-radius: 10px;
+}

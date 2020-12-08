@@ -1,0 +1,68 @@
+.filter-people {
+  background-color: rgba(255, 215, 75, 1);
+  padding: 26px 0 22px 0;
+  border-radius: 20px;
+}
+
+.filter-people__title {
+  @include text(22px, 22px, $text-blue-light, 700);
+}
+
+.filter-people__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.filter-people__container {
+  border: none;
+}
+
+.filter-people__toggle {
+  text-transform: uppercase;
+  background-color: transparent;
+  padding: 12px 0 0 0;
+  border: none;
+  border-top: 1px solid rgba(243, 199, 43, 1);
+
+  @include text(16px, 18px, $text-blue-light, 700);
+}
+
+.filter-people__label {
+  @include text(15px, 20px, $text-black);
+}
+
+.filter-people__button {
+  background-color: rgba(255, 255, 255, 1);
+  border: none;
+  border-radius: 25px;
+
+  &:hover {
+    box-shadow: (0 3px 6px rgba(0, 0, 0, 0.14));
+  }
+
+  &:active {
+    background-color: rgba(243, 199, 43, 1);
+  }
+}
+
+.filter-people__button-text {
+  text-transform: uppercase;
+
+  @include text(17px, 17px, $text-blue, 700);
+
+  .filter-people__button:active & {
+    opacity: 0.3;
+  }
+}
+
+.filter-people__level-container {
+  border: 1px solid rgba(203, 206, 217, 1);
+}
+
+.filter-people__level {
+  text-align: center;
+  border: none;
+
+  @include text(14px, 13px, $text-blue-light, 500);
+}

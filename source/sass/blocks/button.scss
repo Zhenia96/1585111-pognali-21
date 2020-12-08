@@ -28,9 +28,7 @@
 .button__text {
   text-transform: uppercase;
 
-  &--style-1 {
-    .button:active & {
-      opacity: 0.3;
-    }
+  .button--style-1:active & {
+    opacity: 0.3;
   }
 }

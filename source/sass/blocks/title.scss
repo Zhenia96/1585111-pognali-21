@@ -1,0 +1,7 @@
+.title {
+  background-color: rgba(24, 32, 68, 1);
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+
+  @include text(36px, 36px, $text-white, 700);
+}

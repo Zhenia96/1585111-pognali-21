@@ -6,5 +6,5 @@
 .tags__item {
   display: inline;
 
-  @include text(16px, 18px, rgba(68, 68, 68, 1));
+  @include text(16px, 18px, $text-grey);
 }

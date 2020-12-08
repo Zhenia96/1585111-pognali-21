@@ -1,0 +1,20 @@
+.calendar {
+  border-collapse: collapse;
+}
+
+.calendar__heading {
+  color: $text-grey;
+  text-align: center;
+
+  @include text(14px, 18px, $text-grey);
+
+  &--weekend {
+    color: $text-dark-orange;
+  }
+}
+
+.calendar__item {
+  text-align: center;
+  color: $text-grey;
+  border: 1px solid rgba(214, 217, 230, 1);
+}

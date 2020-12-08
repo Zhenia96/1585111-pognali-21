@@ -1,0 +1,177 @@
+.form-section {
+  background-color: rgba(212, 217, 235, 1);
+  border-radius: 30px;
+}
+
+.form-section__title {
+  @include text(24px, 24px, $text-blue-light, 700);
+}
+
+.form-section__pagination {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.form-section__pagination-item {
+  display: inline-block;
+  background-color: rgba(29, 46, 91, 1);
+  width: 5px;
+  height: 5px;
+  margin: 0 5px 0 0;
+  border-radius: 50%;
+  opacity: 0.3;
+
+  &--current {
+    opacity: 1;
+  }
+}
+
+.form-section__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.form-section__item {
+  background-color: rgba(255, 255, 255, 1);
+  padding: 24px 0 23px 0;
+  border-radius: 10px;
+}
+
+.form-section__subtitle {
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 10px;
+
+  @include text(20px, 20px, $text-blue-light, 700);
+}
+
+.form-section__text {
+  @include text(16px, 22px, $text-grey);
+}
+
+.form-section__field-box {
+  margin: 0 0 20px 0;
+}
+
+.form-section__label {
+  text-transform: uppercase;
+
+  @include text(16px, 16px, $text-blue-light, 500);
+
+  &--with-child {
+    text-transform: none;
+    margin: 0 0 28px 0;
+
+    @include text(15px, 15px, $text-blue-light, 400);
+  }
+}
+
+.form-section__unit {
+  opacity: 0.3;
+}
+
+.form-section__month {
+  margin: 0 0 22px 0;
+}
+
+.form-section__calendar {
+  margin: 0 0 22px 0;
+}
+
+.form-section__button {
+  display: block;
+  border: none;
+  border-radius: 20px;
+  margin: 0 0 13px 0;
+
+  @include text(24px, 24px, $text-blue-light, 700);
+}
+
+.form-section__route {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.form-section__country {
+  margin: 0 0 22px 0;
+}
+
+.form-section__selector {
+  position: relative;
+  display: flex;
+  padding: 0;
+  margin: 0 0 22px 0;
+  border: none;
+}
+
+.form-section__selector-toggle {
+  position: relative;
+  text-transform: uppercase;
+  background-color: rgba(255, 255, 255, 1);
+  border: 1px solid rgba(203, 206, 217, 1);
+  border-radius: 4px;
+
+  @include text(14px, 18px, $text-blue-light, 500);
+
+  &--add {
+    background-color: rgba(237, 239, 246, 1);
+  }
+}
+
+.form-section__box {
+  display: none;
+
+  &--open {
+    display: block;
+  }
+}
+
+.form-section__selector-flag {
+  padding: 9px;
+  border: 1px solid rgba(203, 206, 217, 1);
+  border-radius: 4px;
+}
+
+.form-section__selector-close {
+  $diameter: 21px;
+
+  position: absolute;
+  top: -($diameter / 2);
+  right: -($diameter / 2);
+  background-color: rgba(237, 239, 246, 1);
+  width: $diameter;
+  height: $diameter;
+  border: none;
+  border-radius: 50%;
+}
+
+.form-section__plans-list {
+  padding: 0;
+  margin: 0 0 22px 0;
+  list-style: none;
+}
+
+.form-section__plans-item:not(:last-of-type) {
+  margin: 0 0 27px 0;
+}
+
+.form-section__plans-label {
+  display: block;
+  margin: 0 0 18px 0;
+
+  @include text(18px, 18px, $text-blue-light, 500);
+}
+
+.form-section__user-text {
+  padding: 11px 14px;
+  border-color: rgba(203, 206, 217, 1);
+  border-radius: 4px;
+
+  @include text(16px, 22px, $text-grey);
+
+  &::placeholder {
+    opacity: 0.3;
+  }
+}
