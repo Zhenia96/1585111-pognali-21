@@ -1,0 +1,44 @@
+.plans {
+  background-color: rgba(223, 227, 240, 1);
+  padding: 28px 0 49px 0;
+  border-radius: 30px;
+}
+
+.plans__title {
+  @include text(24px, 24px, rgba(29, 46, 91, 1), 700);
+}
+
+.plans__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  counter-reset: plans-counter;
+}
+
+.plans__item {
+  background-color: rgba(255, 255, 255, 1);
+  padding: 24px 0 23px 0;
+  margin: 0 0 10px 0;
+  border-radius: 10px;
+}
+
+.plans__subtitle {
+  counter-increment: plans-counter;
+
+  @include text(16px, 16px, rgba(29, 46, 91, 1), 700);
+
+  &::before {
+    content: counter(plans-counter) ". ";
+  }
+}
+
+.plans__text,
+.plans__date {
+  @include text(14px, 14px, rgba(29, 46, 91, 1), 500);
+}
+
+.plans_link {
+  opacity: 0.3;
+
+  @include text(14px, 14px, rgba(0, 0, 0, 1), 500);
+}
