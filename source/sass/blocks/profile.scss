@@ -4,6 +4,12 @@
   border-radius: 30px;
 }
 
+.profile__title {
+  margin-bottom: 19px;
+
+  @include text(24px, 24px, rgba(255, 141, 48, 1), 700);
+}
+
 .profile__list {
   margin: 44px 0 31px 0;
   counter-reset: profile-counter;

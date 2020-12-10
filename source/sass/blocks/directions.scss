@@ -4,8 +4,14 @@
   border-radius: 30px;
 }
 
+.directions__title {
+  margin-bottom: 19px;
+
+  @include text(24px, 24px, rgba(255, 141, 48, 1), 700);
+}
+
 .directions__text {
-  color: rgba(68, 68, 68, 1);
+  @include text(16px, 22px, rgba(68, 68, 68, 1), 300);
 }
 
 .directions__list {
@@ -33,4 +39,11 @@
   opacity: 0.3;
 
   @include text(16px, 20px, rgba(22, 28, 53, 1), 500);
+}
+
+.directions__button {
+  background-color: rgba(255, 215, 75, 1);
+  border-radius: 10px;
+
+  @include text(18px, 18px, rgba(29, 46, 91, 1), 700);
 }

@@ -5,6 +5,16 @@
   text-align: center;
 }
 
+.feedback__title {
+  margin-bottom: 19px;
+
+  @include text(24px, 24px, rgba(255, 141, 48, 1), 700);
+}
+
+.feedback__text {
+  @include text(16px, 22px, rgba(255, 255, 255, 1), 300);
+}
+
 .feedback__link {
   color: rgba(255, 215, 75, 1);
 
