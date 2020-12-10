@@ -1,0 +1,72 @@
+.catalog-people__list {
+  list-style: none;
+}
+
+.catalog-people__item {
+  background-color: rgba(255, 255, 255, 1);
+  padding: 0 0 23px 0;
+  border-radius: 20px;
+}
+
+.catalog-people__title {
+  @include text(20px, 20px, $text-blue-light, 700);
+}
+
+.catalog-people__likes {
+  @include text(14px, 16px, $text-blue, 700);
+}
+
+.catalog-people__text {
+  @include text(15px, 16px, $text-grey);
+}
+
+.catalog-people__tags {
+  font-size: 15px;
+}
+
+.catalog-people__countries {
+  list-style: none;
+  padding: 0;
+}
+
+.catalog-people__country {
+  text-transform: uppercase;
+
+  @include text(15px, 16px, $text-blue-light, 500);
+}
+
+.catalog-people__level {
+  text-transform: uppercase;
+
+  @include text(24px, 24px, $text-blue-light, 700);
+}
+
+.catalog-people__call {
+  border: none;
+  border-radius: 25px;
+
+  @include text(17px, 17px, $text-blue, 700);
+}
+
+.catalog-people__button {
+  border: none;
+  background-color: transparent;
+  text-transform: uppercase;
+
+  @include text(17px, 30px, $text-blue-light, 700);
+}
+
+.catalog-people__control-button {
+  background-color: rgba(255, 255, 255, 1);
+  border: none;
+
+  &--back {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+
+  &--next {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+}

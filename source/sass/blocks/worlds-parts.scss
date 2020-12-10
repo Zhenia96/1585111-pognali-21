@@ -1,10 +1,12 @@
-.contacts {
+.worlds-parts {
   padding: 0;
   list-style: none;
 }
 
-.contacts__item {
+.worlds-parts__button {
   text-transform: uppercase;
+  background-color: transparent;
+  border: none;
 
   @include text(16px, 18px, $text-dark, 700);
 }

@@ -8,13 +8,13 @@
   border-radius: 20px;
   cursor: pointer;
 
-  @include text(20px, 18px, rgba(22, 28, 53, 1), 500);
+  @include text(20px, 18px, $text-blue, 500);
 }
 
 .user-profile__subtitle {
   text-transform: uppercase;
 
-  @include text(16px, 18px, rgba(29, 46, 91, 1), 700);
+  @include text(16px, 18px, $text-blue-light, 700);
 }
 
 .user-profile__container {

@@ -4,7 +4,7 @@
 }
 
 .form-section__title {
-  @include text(24px, 24px, rgba(29, 46, 91, 1), 700);
+  @include text(24px, 24px, $text-blue-light, 700);
 }
 
 .form-section__pagination {
@@ -43,11 +43,11 @@
   background-color: rgba(255, 255, 255, 1);
   border-radius: 10px;
 
-  @include text(20px, 20px, rgba(29, 46, 91, 1), 700);
+  @include text(20px, 20px, $text-blue-light, 700);
 }
 
 .form-section__text {
-  @include text(16px, 22px, rgba(68, 68, 68, 1));
+  @include text(16px, 22px, $text-grey);
 }
 
 .form-section__field-box {
@@ -57,13 +57,13 @@
 .form-section__label {
   text-transform: uppercase;
 
-  @include text(16px, 16px, rgba(29, 46, 91, 1), 500);
+  @include text(16px, 16px, $text-blue-light, 500);
 
   &--with-child {
     text-transform: none;
     margin: 0 0 28px 0;
 
-    @include text(15px, 15px, rgba(29, 46, 91, 1), 400);
+    @include text(15px, 15px, $text-blue-light, 400);
   }
 }
 
@@ -85,7 +85,7 @@
   border-radius: 20px;
   margin: 0 0 13px 0;
 
-  @include text(24px, 24px, rgba(29, 46, 91, 1), 700);
+  @include text(24px, 24px, $text-blue-light, 700);
 }
 
 .form-section__route {
@@ -113,7 +113,7 @@
   border: 1px solid rgba(203, 206, 217, 1);
   border-radius: 4px;
 
-  @include text(14px, 18px, rgba(29, 46, 91, 1), 500);
+  @include text(14px, 18px, $text-blue-light, 500);
 
   &--add {
     background-color: rgba(237, 239, 246, 1);
@@ -161,7 +161,7 @@
   display: block;
   margin: 0 0 18px 0;
 
-  @include text(18px, 18px, rgba(29, 46, 91, 1), 500);
+  @include text(18px, 18px, $text-blue-light, 500);
 }
 
 .form-section__user-text {
@@ -169,7 +169,7 @@
   border-color: rgba(203, 206, 217, 1);
   border-radius: 4px;
 
-  @include text(16px, 22px, rgba(68, 68, 68, 1));
+  @include text(16px, 22px, $text-grey);
 
   &::placeholder {
     opacity: 0.3;

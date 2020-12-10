@@ -7,13 +7,13 @@
 .companions__title {
   margin-bottom: 19px;
 
-  @include text(24px, 24px, rgba(255, 141, 48, 1), 700);
+  @include text(24px, 24px, $text-dark-orange, 700);
 }
 
 .companions__text {
   margin-bottom: 25px;
 
-  @include text(16px, 22px, rgba(255, 255, 255, 1), 300);
+  @include text(16px, 22px, $text-white, 300);
 
   &--bold {
     font-weight: 700;
@@ -56,7 +56,7 @@
   padding-left: 16px;
   margin: 13px 0 0 0;
 
-  @include text(21px, 21px, rgba(29, 46, 91, 1), 700);
+  @include text(21px, 21px, $text-blue-light, 700);
 
   &::before {
     position: absolute;
@@ -95,5 +95,5 @@
   background-color: rgba(255, 215, 75, 1);
   border-radius: 10px;
 
-  @include text(18px, 18px, rgba(29, 46, 91, 1), 700);
+  @include text(18px, 18px, $text-blue-light, 700);
 }

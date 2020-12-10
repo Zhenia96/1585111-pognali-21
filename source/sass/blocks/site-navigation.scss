@@ -6,5 +6,5 @@
   text-align: center;
   text-transform: uppercase;
 
-  @include text(30px, 35px, rgba(25, 33, 68, 1), 500);
+  @include text(30px, 35px, $text-dark, 500);
 }

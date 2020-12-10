@@ -5,7 +5,7 @@
 }
 
 .plans__title {
-  @include text(24px, 24px, rgba(29, 46, 91, 1), 700);
+  @include text(24px, 24px, $text-blue-light, 700);
 }
 
 .plans__list {
@@ -25,7 +25,7 @@
 .plans__subtitle {
   counter-increment: plans-counter;
 
-  @include text(16px, 16px, rgba(29, 46, 91, 1), 700);
+  @include text(16px, 16px, $text-blue-light, 700);
 
   &::before {
     content: counter(plans-counter) ". ";
@@ -34,11 +34,11 @@
 
 .plans__text,
 .plans__date {
-  @include text(14px, 14px, rgba(29, 46, 91, 1), 500);
+  @include text(14px, 14px, $text-blue-light, 500);
 }
 
 .plans_link {
   opacity: 0.3;
 
-  @include text(14px, 14px, rgba(0, 0, 0, 1), 500);
+  @include text(14px, 14px, $text-black, 500);
 }

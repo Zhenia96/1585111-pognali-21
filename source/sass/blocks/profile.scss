@@ -7,7 +7,7 @@
 .profile__title {
   margin-bottom: 19px;
 
-  @include text(24px, 24px, rgba(255, 141, 48, 1), 700);
+  @include text(24px, 24px, $text-orange, 700);
 }
 
 .profile__list {
@@ -31,7 +31,7 @@
     position: absolute;
     top: 11px;
     right: -11px;
-    color: rgba(255, 255, 255, 1);
+    color: $text-white;
     content: counter(profile-counter);
     background-color: rgba(255, 141, 48, 1);
     width: 34px;
@@ -56,7 +56,7 @@
 .profile__price {
   margin: 0 0 6px 0;
 
-  @include text(16px, 16px, rgba(68, 68, 68, 1), 300);
+  @include text(16px, 16px, $text-grey, 300);
 }
 
 .profile__link {

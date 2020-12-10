@@ -8,23 +8,23 @@
 .feedback__title {
   margin-bottom: 19px;
 
-  @include text(24px, 24px, rgba(255, 141, 48, 1), 700);
+  @include text(24px, 24px, $text-orange, 700);
 }
 
 .feedback__text {
-  @include text(16px, 22px, rgba(255, 255, 255, 1), 300);
+  @include text(16px, 22px, $text-white, 300);
 }
 
 .feedback__link {
-  color: rgba(255, 215, 75, 1);
+  color: $text-yellow;
 
   &:hover,
   &:focus {
-    color: rgba(255, 141, 48, 1);
+    color: $text-orange;
   }
 
   &:active {
-    color: rgba(255, 141, 48, 1);
+    color: $text-orange;
     opacity: 0.3;
   }
 }
@@ -36,12 +36,12 @@
   &::placeholder {
     padding: 22px 25px;
 
-    @include text(18px, 18px, rgba(68, 68, 68, 1), 700);
+    @include text(18px, 18px, $text-grey, 700);
   }
 }
 
 .feedback__phone,
 .feedback__email {
   line-height: 22px;
-  color: rgba(255, 215, 75, 1);
+  color: $text-yellow;
 }

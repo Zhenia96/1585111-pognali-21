@@ -11,5 +11,5 @@
   border: 1px solid rgba(203, 206, 217, 1);
   box-sizing: border-box;
 
-  @include text(14px, 18px, rgba(29, 46, 91, 1), 500);
+  @include text(14px, 18px, $text-blue-light, 500);
 }

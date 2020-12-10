@@ -3,5 +3,5 @@
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
 
-  @include text(36px, 36px, rgba(255, 255, 255, 1), 700);
+  @include text(36px, 36px, $text-white, 700);
 }

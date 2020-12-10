@@ -7,5 +7,5 @@
   text-align: center;
   border: none;
 
-  @include text(20px, 20px, rgba(29, 46, 91, 1), 700);
+  @include text(20px, 20px, $text-blue-light, 700);
 }

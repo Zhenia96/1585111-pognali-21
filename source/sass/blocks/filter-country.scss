@@ -1,0 +1,27 @@
+.filter-country {
+  background-color: rgba(226, 229, 242, 1);
+  padding: 0 0 28px 0;
+  border-radius: 30px;
+}
+
+.filter-country__close {
+  background-color: rgba(214, 218, 237, 1);
+  border: none;
+  border-radius: 20px;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: rgba(200, 206, 232, 1);
+  }
+}
+
+.filter-country__close-text {
+  text-transform: uppercase;
+
+  @include text(16px, 20px, $text-dark, 700);
+
+  .filter-country__close &:active {
+    opacity: 0.3;
+  }
+}
