@@ -1,7 +1,22 @@
-.address__box {
+.address {
+  position: relative;
+  margin: -60px 0 0 0;
+  z-index: -600;
+}
+
+.address__container {
   background-color: rgba(255, 215, 75, 1);
-  padding: 65px 0 35px 0;
+  padding: 93px 0 35px 0;
   border-radius: 30px;
+}
+
+.address__wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+  }
 }
 
 .address__text {
@@ -23,8 +38,16 @@
     background-color: rgba(25, 33, 68, 1);
   }
 
+
   &:active {
     color: $text-white;
     opacity: 0.3;
   }
+}
+
+.address__map {
+  position: relative;
+  width: 100%;
+  margin: -30px 0 0 0;
+  z-index: -650;
 }

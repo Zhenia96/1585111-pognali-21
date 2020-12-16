@@ -1,13 +1,20 @@
 .profile {
+  position: relative;
   background-color: rgba(230, 232, 241, 1);
-  padding: 106px 0 38px 0;
+  padding: 120px 0 38px 0;
+  margin: -60px 0 0 0;
   border-radius: 30px;
+  z-index: -400;
 }
 
 .profile__title {
   margin-bottom: 19px;
 
   @include text(24px, 24px, $text-orange, 700);
+
+  @media (min-width: $tablet-width) {
+    text-align: center;
+  }
 }
 
 .profile__list {
@@ -17,6 +24,8 @@
 
 .profile__item {
   position: relative;
+  display: flex;
+  flex-direction: column;
   border-top: 1px solid rgba(225, 227, 233, 1);
   border-bottom: 1px solid rgba(225, 227, 233, 1);
   box-sizing: border-box;
@@ -37,6 +46,18 @@
     width: 34px;
     height: 34px;
     border-radius: 50%;
+  }
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    margin: -1px 0 0 90px;
+
+    &::before {
+      top: 11px;
+      right: 0;
+      left: -45px;
+    }
   }
 
   &--second {

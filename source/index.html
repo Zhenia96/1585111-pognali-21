@@ -5,23 +5,34 @@
   <meta charset="utf-8">
   <title>HTML Academy: Погнали</title>
   <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body class="page__body">
 
-  <header class="main-header">
+  <header class="main-header main-header--type-2">
     <div class="centering-wrapper">
       <a class="logo main-header__logo" href="#"><img src="https://via.placeholder.com/11x21"
           alt="Логотип туристического сервиса Погнали"></a>
       <button class="main-header__toggle" type="button" aria-label="Открыть главное
       меню"></button>
       <nav class="main-header__navigation">
-        <ul class="site-navigation">
-          <li class="site-navigation__item"><a class="link" href="#">О сервисе</a></li>
-          <li class="site-navigation__item"><a class="link" href="form.html">Направления</a></li>
-          <li class="site-navigation__item"><a class="link" href="catalog.html">Попутчики</a></li>
+        <ul class="site-navigation main-header__site-navigation">
+          <li class="site-navigation__item main-header__site-navigation-item"><a class="link" href="#">О сервисе</a>
+          </li>
+          <li class="site-navigation__item main-header__site-navigation-item"><a class="link"
+              href="form.html">Направления</a></li>
+          <li class="site-navigation__item main-header__site-navigation-item"><a class="link"
+              href="catalog.html">Попутчики</a></li>
         </ul>
       </nav>
+      <ul class="contacts-v2 main-header__contacts-v2" aria-label="Наши контакты">
+        <li class="contacts-v2__item"><a class="contacts-v2__link" href="tel:+88005558628"><img
+              src="https://via.placeholder.com/40x40" alt="Наш номер
+          телефона: 8 800 555-86-28"></a></li>
+        <li class="contacts-v2__item"><a class="contacts-v2__link" href="mailto:mail@htmlacademy.ru"><img
+              src="https://via.placeholder.com/40x40" alt="Наша почта"></a></li>
+      </ul>
       <a class="button button--style-1 authorization main-header__authorization" href="#"><span
           class="button__text">Авторизация</span></a>
       <ul class="contacts main-header__contacts" aria-label="Наши контакты">
@@ -31,12 +42,12 @@
               почта:</span>mail@htmlacademy.ru</a></li>
       </ul>
       <ul class="social main-header__social">
-        <li class="interaction-with-element social__item"><a class="link" href="#"><img
-              src="https://via.placeholder.com/11x21" alt="Мы в Фейсбуке"></a></li>
-        <li class="interaction-with-element social__item"><a class="link" href="#"><img
-              src="https://via.placeholder.com/23x12" alt="Мы в Вконтакте"></a></li>
-        <li class="interaction-with-element social__item"><a class="link" href="#"><img
-              src="https://via.placeholder.com/18x18" alt="Мы в Инстаграме"></a>
+        <li class="social__item"><a class="link" href="#"><img src="https://via.placeholder.com/11x21"
+              alt="Мы в Фейсбуке"></a></li>
+        <li class="social__item"><a class="link" href="#"><img src="https://via.placeholder.com/23x12"
+              alt="Мы в Вконтакте"></a></li>
+        <li class="social__item"><a class="link" href="#"><img src="https://via.placeholder.com/18x18"
+              alt="Мы в Инстаграме"></a>
         </li>
       </ul>
     </div>
@@ -47,10 +58,17 @@
     <h1 class="visually-hidden"> Туристический сервис по подбору попутчиков <b>Погнали</b></h1>
 
     <section class="promo">
-      <div class="centering-wrapper">
+      <div class="centering-wrapper promo__wrapper">
         <h2 class="visually-hidden">Как начать путешествие</h2>
         <p class="promo__slogan">В путешествие с крутыми попутчиками!</p>
-        <div class="promo__container">
+        <div class="promo__menu">
+          <a class="logo promo__logo" href="#"><img src="https://via.placeholder.com/11x21"
+              alt="Логотип туристического сервиса Погнали"></a>
+          <ul class="site-navigation promo__site-navigation">
+            <li class="site-navigation__item"><a class="link" href="#">О сервисе</a></li>
+            <li class="site-navigation__item"><a class="link" href="form.html">Направления</a></li>
+            <li class="site-navigation__item"><a class="link" href="catalog.html">Попутчики</a></li>
+          </ul>
           <ul class="contacts-v2 promo__contacts" aria-label="Наши контакты">
             <li class="contacts-v2__item"><a class="contacts-v2__link" href="tel:+88005558628"><img
                   src="https://via.placeholder.com/40x40" alt="Наш номер
@@ -67,7 +85,7 @@
               class="promo__text promo__text--bold">«гаджетлайф»</cite></p>
         </div>
         <ol class="promo__guide">
-          <li class="promo__guide-item">Выберите<br> направление</li>
+          <li class="promo__guide-item promo__guide-item--type-1">Выберите<br> направление</li>
           <li class="promo__guide-item promo__guide-item--type-2">Изучите идеи<br> путешественников</li>
           <li class="promo__guide-item promo__guide-item--type-3">Находите тех,<br> кто похож на вас</li>
           <li class="promo__guide-item promo__guide-item--type-4">Путешествуйте<br> вместе!</li>
@@ -76,17 +94,19 @@
     </section>
 
     <section class="about-project">
-      <div class="centering-wrapper">
-        <h2 class="about-project__title">О Сервисе</h2>
-        <p class="about-project__text">Любое путешествие веселее с попутчиками, которые на одной волне с
-          тобой! Делитесь своими идеями путешествий и черпайте вдохновение в чужих.</p>
-        <p class="about-project__text about-project__text--bold">А если найдете кого-то близкого по
-          духу — скорее зовите в совместный трип!</p>
+      <div class="centering-wrapper about-project__wrapper">
+        <div class="about-project__column">
+          <h2 class="about-project__title">О Сервисе</h2>
+          <p class="about-project__text">Любое путешествие веселее с попутчиками, которые на одной волне с
+            тобой! Делитесь своими идеями путешествий и черпайте вдохновение в чужих.</p>
+          <p class="about-project__text about-project__text--bold">А если найдете кого-то близкого по
+            духу — скорее зовите в совместный трип!</p>
+        </div>
       </div>
     </section>
 
     <section class="directions">
-      <div class="centering-wrapper">
+      <div class="centering-wrapper directions__background directions__wrapper">
         <h2 class="directions__title">Направления</h2>
         <p class="directions__text">Мы не продаем туры и ничего не рекламируем. Люди сами пишут о
           странах, куда хотели бы отправиться и чем можно там заняться.</p>
@@ -132,74 +152,75 @@
     </section>
 
     <section class="companions">
-      <div class="centering-wrapper">
-        <h2 class="companions__title">Попутчики</h2>
-        <p class="companions__text">Все мы индивидуальны и у каждого свой взгляд на идеальный
-          отдых.
-          Одному нужен пляж и коктейль, а другому маршрут для хайкинга.</p>
-        <p class="companions__text companions__text--bold">Теперь можно легко найти
-          единомышленников!</p>
+      <div class="centering-wrapper companions__wrapper">
+        <div class="companions__container">
+          <h2 class="companions__title">Попутчики</h2>
+          <p class="companions__text">Все мы индивидуальны и у каждого свой взгляд на идеальный
+            отдых.
+            Одному нужен пляж и коктейль, а другому маршрут для хайкинга.</p>
+          <p class="companions__text companions__text--bold">Теперь можно легко найти
+            единомышленников!</p>
+        </div>
+        <ul class="companions__list">
+          <li class="companions__item">
+            <img class="companions__picture" src="https://via.placeholder.com/270x270"
+              alt="Аватар Тани Фирсовой, на котором изображена девушка плавающая на спине.">
+            <div class="companions__container">
+              <ul class="companions__flags">
+                <li class="companions__flag"><img src="https://via.placeholder.com/35x24" alt="Флаг Шри-Ланки"></li>
+                <li class="companions__flag"><img src="https://via.placeholder.com/35x24" alt="Флаг Тайланда"></li>
+                <li class="companions__flag"><img src="https://via.placeholder.com/35x24" alt="Сейшельский флаг"></li>
+              </ul>
+              <h3 class="companions__subtitle"><a class="link" href=#>Таня Фирсова</a></h3>
+              <div class="level companions__level">99<span lang="en">level</span></div>
+              <ul class="tags companions__tags" aria-label="Хэш-теги">
+                <li class="tags__item"><a class="link" href="#">#ЗОЖ</a></li>
+                <li class="tags__item"><a class="link" href="#">#ПП</a></li>
+                <li class="tags__item"><a class="link" href="#">#Фитнес</a></li>
+                <li class="tags__item"><a class="link" href="#">#пляж</a></li>
+                <li class="tags__item"><a class="link" href="#">#авокадо</a></li>
+                <li class="tags__item"><a class="link" href="#">#смузи</a></li>
+              </ul>
+              <ul class="transport companions__transport" aria-label="Транспорт путешествия">
+                <li class="transport__item"><img src="https://via.placeholder.com/21x21" alt="Самолет"></li>
+                <li class="transport__item"><img src="https://via.placeholder.com/21x21" alt="Автобус"></li>
+                <li class="transport__item"><img src="https://via.placeholder.com/21x21" alt="Велосипед"></li>
+                <li class="transport__item"><img src="https://via.placeholder.com/21x21" alt="Пешком"></li>
+              </ul>
+            </div>
+          </li>
+          <li class="companions__item">
+            <img class="companions__picture" src="https://via.placeholder.com/270x270"
+              alt="Аватар Пети Демина, на котором изображён рыжий мужик в очках и шапке, на фоне снега.">
+            <div class="companions__container">
+              <ul class="companions__flags">
+                <li class="companions__flag"><img src="https://via.placeholder.com/35x24" alt="Флаг Болгарии"></li>
+                <li class="companions__flag"><img src="https://via.placeholder.com/35x24" alt="Флаг Чехии"></li>
+              </ul>
+              <h3 class="companions__subtitle companions__subtitle--online"><a class="link" href=#>Петя Демин</a></h3>
+              <div class="level companions__level">80<span lang="en">level</span></div>
+              <ul class="tags companions__tags" aria-label="Хэш-теги">
+                <li class="tags__item"><a class="link" href="#">#бургер</a></li>
+                <li class="tags__item"><a class="link" href="#">#бар</a></li>
+                <li class="tags__item"><a class="link" href="#">#футбол</a></li>
+                <li class="tags__item"><a class="link" href="#">#концерт</a></li>
+                <li class="tags__item"><a class="link" href="#">#крафт</a></li>
+              </ul>
+              <ul class="transport companions__transport" aria-label="Транспорт путешествия">
+                <li class="transport__item"><img src="https://via.placeholder.com/21x21" alt="Самолет"></li>
+                <li class="transport__item"><img src="https://via.placeholder.com/21x21" alt="Автобус"></li>
+                <li class="transport__item"><img src="https://via.placeholder.com/21x21" alt="Велосипед"></li>
+                <li class="transport__item"><img src="https://via.placeholder.com/21x21" alt="Пешком"></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+        <a class="button button--triangle companions__button" href="#">Показать всеx</a>
       </div>
-      <ul class="companions__list">
-        <li class="companions__item">
-          <img class="companions__picture" src="https://via.placeholder.com/270x270"
-            alt="Аватар Тани Фирсовой, на котором изображена девушка плавающая на спине.">
-          <div class="companions__container">
-            <ul class="companions__flags">
-              <li class="companions__flag"><img src="https://via.placeholder.com/35x24" alt="Флаг Шри-Ланки"></li>
-              <li class="companions__flag"><img src="https://via.placeholder.com/35x24" alt="Флаг Тайланда"></li>
-              <li class="companions__flag"><img src="https://via.placeholder.com/35x24" alt="Сейшельский флаг"></li>
-            </ul>
-            <h3 class="interaction-with-element companions__subtitle"><a class="link" href=#>Таня Фирсова</a></h3>
-            <div class="level companions__level">99<span lang="en">level</span></div>
-            <ul class="tags companions__tags" aria-label="Хэш-теги">
-              <li class="tags__item"><a class="link" href="#">#ЗОЖ</a></li>
-              <li class="tags__item"><a class="link" href="#">#ПП</a></li>
-              <li class="tags__item"><a class="link" href="#">#Фитнес</a></li>
-              <li class="tags__item"><a class="link" href="#">#пляж</a></li>
-              <li class="tags__item"><a class="link" href="#">#авокадо</a></li>
-              <li class="tags__item"><a class="link" href="#">#смузи</a></li>
-            </ul>
-            <ul class="transport companions__transport" aria-label="Транспорт путешествия">
-              <li class="transport__item"><img src="https://via.placeholder.com/21x21" alt="Самолет"></li>
-              <li class="transport__item"><img src="https://via.placeholder.com/21x21" alt="Автобус"></li>
-              <li class="transport__item"><img src="https://via.placeholder.com/21x21" alt="Велосипед"></li>
-              <li class="transport__item"><img src="https://via.placeholder.com/21x21" alt="Пешком"></li>
-            </ul>
-          </div>
-        </li>
-        <li class="companions__item">
-          <img class="companions__picture" src="https://via.placeholder.com/270x270"
-            alt="Аватар Пети Демина, на котором изображён рыжий мужик в очках и шапке, на фоне снега.">
-          <div class="companions__container">
-            <ul class="companions__flags">
-              <li class="companions__flag"><img src="https://via.placeholder.com/35x24" alt="Флаг Болгарии"></li>
-              <li class="companions__flag"><img src="https://via.placeholder.com/35x24" alt="Флаг Чехии"></li>
-            </ul>
-            <h3 class="interaction-with-element companions__subtitle companions__subtitle--online"><a class="link"
-                href=#>Петя Демин</a></h3>
-            <div class="level companions__level">80<span lang="en">level</span></div>
-            <ul class="tags companions__tags" aria-label="Хэш-теги">
-              <li class="tags__item"><a class="link" href="#">#бургер</a></li>
-              <li class="tags__item"><a class="link" href="#">#бар</a></li>
-              <li class="tags__item"><a class="link" href="#">#футбол</a></li>
-              <li class="tags__item"><a class="link" href="#">#концерт</a></li>
-              <li class="tags__item"><a class="link" href="#">#крафт</a></li>
-            </ul>
-            <ul class="transport companions__transport" aria-label="Транспорт путешествия">
-              <li class="transport__item"><img src="https://via.placeholder.com/21x21" alt="Самолет"></li>
-              <li class="transport__item"><img src="https://via.placeholder.com/21x21" alt="Автобус"></li>
-              <li class="transport__item"><img src="https://via.placeholder.com/21x21" alt="Велосипед"></li>
-              <li class="transport__item"><img src="https://via.placeholder.com/21x21" alt="Пешком"></li>
-            </ul>
-          </div>
-        </li>
-      </ul>
-      <a class="button button--triangle companions__button" href="#">Показать всеx</a>
     </section>
 
     <section class="profile">
-      <div class="centering-wrapper">
+      <div class="centering-wrapper ">
         <h2 class="profile__title">Добавьте свой профиль</h2>
         <img class="profile__picture" src="https://via.placeholder.com/100x100" alt="Тариф">
         <dl class="profile__list">
@@ -216,48 +237,46 @@
             <dd class="profile__price">59 руб./мес</dd>
           </div>
         </dl>
-        <a class="interaction-with-element link profile__link" href="#">Показать тарифы для бизнеса</a>
+        <a class="link profile__link" href="#">Показать тарифы для бизнеса</a>
       </div>
     </section>
 
     <section class="feedback">
-      <div class="centering-wrapper">
+      <div class="centering-wrapper feedback__wrapper">
         <h2 class="feedback__title">Заинтересовались?</h2>
-        <p class="feedback__text">Зарегистрируйтесь,<br>
-          это быстро и бесплатно!<br>
-          Уже зарегистрированы? Тогда<br>
-          скорее <a class="feedback__link" href="#">авторизуйтесь</a>.</p>
+        <p class="feedback__text">Зарегистрируйтесь, это быстро и бесплатно!<br>
+          Уже зарегистрированы? Тогда скорее <a class="feedback__link" href="#">авторизуйтесь</a>.</p>
         <form class="feedback__form" action="https://echo.htmlacademy.ru" method="get">
           <input class="feedback__email" type="email" name="email" placeholder="E-mail">
         </form>
         <p class="feedback__text">Остались вопросы? Мы с радостью на них ответим!</p>
         <ul class="contacts feedback__contacts" aria-label="Наши контакты">
-          <li class="contacts__item feedback__phone"><a class="link" href="tel:+88005558628"><span
+          <li class="contacts__item feedback__contacts-item"><a class="link" href="tel:+88005558628"><span
                 class="visually-hidden">Наш номер
                 телефона:</span>8 800 555-86-28</a></li>
-          <li class="contacts__item feedback__email"><a class="link" href="mailto:mail@htmlacademy.ru"><span
+          <li class="contacts__item feedback__contacts-item"><a class="link" href="mailto:mail@htmlacademy.ru"><span
                 class="visually-hidden">Наша почта:</span>mail@htmlacademy.ru</a></li>
         </ul>
       </div>
     </section>
 
     <section class="address">
-      <div class="centering-wrapper">
-        <div class="address__box">
+      <div class="address__container">
+        <div class="centering-wrapper address__wrapper">
           <h2 class="visually-hidden">Мы на карте</h2>
           <address class="address__text">ул. Большая
             Конюшенная, 19/8</address>
           <a class="button button--triangle address__button" href="#">Проложить маршрут</a>
         </div>
-        <img class="address__map" src="https://via.placeholder.com/320x424"
-          alt="Карта с адресом офиса сервиса Погнали.">
       </div>
+      <img class="address__map" src="https://via.placeholder.com/320x424" width="320px" height="424px"
+        alt="Карта с адресом офиса сервиса Погнали.">
     </section>
 
   </main>
 
   <footer class="main-footer">
-    <div class="centering-wrapper">
+    <div class="centering-wrapper main-footer__wrapper">
       <a class="logo main-footer__logo" href="#"><img src="https://via.placeholder.com/11x21"
           alt="Логотип туристического сервиса Погнали"></a>
       <ul class="social main-footer__social">

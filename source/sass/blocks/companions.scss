@@ -1,7 +1,35 @@
 .companions {
+  position: relative;
   background-color: rgba(25, 33, 68, 1);
-  padding: 102px 0 31px 0;
-  border-radius: 30px;
+  padding: 68px 0 31px 0;
+  margin: -30px 0 0 0;
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  z-index: -300;
+
+  @media (min-width: $tablet-width) {
+    padding: 138px 0 87px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 171px 0 80px 0;
+  }
+}
+
+.companions__wrapper {
+  display: grid;
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+  }
+}
+
+.companions__container {
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
 }
 
 .companions__title {
@@ -21,9 +49,20 @@
 }
 
 .companions__list {
+  display: flex;
+  flex-direction: column;
   padding: 0;
   margin: 0;
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+  }
 }
 
 .companions__item {
@@ -35,13 +74,6 @@
   &:hover {
     box-shadow: (0 4px 9px rgba(0, 0, 0, 0.16));
   }
-}
-
-.companions__container {
-  background-color: rgba(255, 255, 255, 1);
-  border: 1px solid transparent;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
 }
 
 .companions__flags {
@@ -96,4 +128,9 @@
   border-radius: 10px;
 
   @include text(18px, 18px, $text-blue-light, 700);
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
 }

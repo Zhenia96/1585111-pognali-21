@@ -21,7 +21,7 @@
 
   @include text(16px, 20px, $text-dark, 700);
 
-  .filter-country__close &:active {
+  .filter-country__close:active & {
     opacity: 0.3;
   }
 }
