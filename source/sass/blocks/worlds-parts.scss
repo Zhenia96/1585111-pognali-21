@@ -9,4 +9,5 @@
   border: none;
 
   @include text(16px, 18px, $text-dark, 700);
+  @include opacity-hover-active;
 }

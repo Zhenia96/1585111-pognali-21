@@ -1,13 +1,53 @@
 .about-project {
   background-color: rgba(25, 33, 68, 1);
-  padding-bottom: 82px;
-  border-radius: 30px;
+  padding: 240px 0 82px 29px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  margin-top: -240px;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 1fr 376px;
+    grid-template-rows: 237px 212px 1fr;
+    padding: 141px 0 89px 34px;
+    margin-top: -141px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 630px;
+    grid-template-rows: 1fr;
+    padding: 42px 0 163px 70px;
+    margin: 0;
+  }
+}
+
+.about-project__wrapper {
+  display: grid;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 1fr 376px;
+    grid-template-rows: 237px 212px 1fr;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 630px;
+    grid-template-rows: 1fr;
+  }
 }
 
 .about-project__title {
-  margin-bottom: 19px;
+  margin: 72px 0 19px 0;
 
   @include text(24px, 24px, $text-orange, 700);
+
+  @media (min-width: $tablet-width) {
+    font-size: 45px;
+    line-height: 45px;
+    margin: 137px 0 40px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 57px 0;
+  }
 }
 
 .about-project__text {

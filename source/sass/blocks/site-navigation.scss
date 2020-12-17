@@ -3,7 +3,6 @@
 }
 
 .site-navigation__item {
-  text-align: center;
   text-transform: uppercase;
 
   @include text(30px, 35px, $text-dark, 500);

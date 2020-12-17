@@ -1,3 +1,11 @@
 .centering-wrapper {
-  margin: 0 auto;
+  margin: 0 25px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 58px;
+  }
 }

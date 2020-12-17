@@ -1,5 +1,11 @@
+.page {
+  height: 100%;
+}
+
 .page__body {
   font-family: "Blogger Sans", "Arial", sans-serif;
   font-style: normal;
   background-color: rgba(237, 239, 246, 1);
+  min-height: 100%;
+  margin: 0;
 }

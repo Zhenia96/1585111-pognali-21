@@ -4,3 +4,20 @@
   font-weight: $weight;
   color: $color;
 }
+
+@mixin opacity-hover-active($hover: 0.6, $active: 0.3) {
+  &:hover,
+  &:focus {
+    opacity: $hover;
+  }
+
+  &:active {
+    opacity: $active;
+  }
+}
+
+//ВРЕМЕННО
+@mixin outline($color: rgba(255, 0, 0, 1)) {
+  outline: 2px solid $color;
+  outline-offset: -2px;
+}
